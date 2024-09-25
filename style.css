@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    margin: 15pt;
+}
+
+/* Headings */
+h1 {
+    font-size: 24pt;
+    color: #2E8B57; /* Sea Green */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20pt;
+    color: #4682B4; /* Steel Blue */
+}
+
+h3 {
+    font-size: 16pt;
+    color: #6A5ACD; /* Slate Blue */
+}
+
+/* Paragraphs */
+p {
+    font-size: 12pt;
+    color: #696969; /* Dim Grey */
+}
+
+/* Links */
+a:link, a:visited {
+    color: #8B0000; /* Dark Red */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6347; /* Tomato */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FF4500; /* OrangeRed */
+}
+
+/* CSS Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Divs */
+div.text-section {
+    padding: 10px;
+    background-color: #e6e6fa; /* Lavender */
+}
+
+div.link-section {
+    padding: 10px;
+    background-color: #fafad2; /* Light Goldenrod Yellow */
+}
