@@ -6,26 +6,29 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #f4f4f4; /* Light grey background */
-    color: #333333; /* Dark grey text */
+    background-color: beige;
+    color: darkgrey;
     margin: 15pt;
 }
 
 /* Headings */
 h1 {
+    font-family: Georgia, serif;
     font-size: 24pt;
-    color: #2E8B57; /* Sea Green */
+    color: green;
     font-weight: bold;
 }
 
 h2 {
+    font-family: 'Times New Roman', serif;
     font-size: 20pt;
-    color: #4682B4; /* Steel Blue */
+    color: blue;
 }
 
 h3 {
+    font-family: 'Gill Sans', sans-serif;
     font-size: 16pt;
-    color: #6A5ACD; /* Slate Blue */
+    color: indigo;
 }
 
 /* Paragraphs */
