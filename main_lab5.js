@@ -1,12 +1,12 @@
 // Prompt for user's name and display it in the output paragraph
-document.getElementById("nameBtn").addEventListener("click", function() {
+function nameFunction() {
     let userName = prompt("Please enter your name:");
     if (userName) {
       document.getElementById("output").textContent = "Hello, " + userName + "!";
     } else {
       document.getElementById("output").textContent = "You didn't enter a name!";
     }
-  });
+  };
   
   // Make the image clickable and enlarge when clicked
   document.getElementById("profileImage").addEventListener("click", function() {
