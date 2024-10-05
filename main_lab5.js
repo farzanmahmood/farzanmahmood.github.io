@@ -7,7 +7,9 @@ function nameFunction() {
       document.getElementById("output").textContent = "You didn't enter a name!";
     }
   };
-  
+ 
+
+
 // Make the image clickable and enlarge when clicked
 function toggleImageSize() {
     const image = document.getElementById("clickableImage");
@@ -19,13 +21,16 @@ function toggleImageSize() {
       image.style.width = "300px"; // Revert back to original size
     }
   };
-  
-  // Highlight function for nav items (onmouseover)
-  function highlight(element) {
-    element.style.backgroundColor = "lightgray";
+ 
+
+// Function to show the dropdown menu
+function showDropdown(dropdownId) {
+    const submenu = document.getElementById(dropdownId);
+    submenu.style.display = 'block';
   }
-  
-  // Unhighlight function for nav items (onmouseout)
-  function unhighlight(element) {
-    element.style.backgroundColor = "";
+
+  // Function to hide the dropdown menu
+  function hideDropdown(dropdownId) {
+    const submenu = document.getElementById(dropdownId);
+    submenu.style.display = 'none';
   }
