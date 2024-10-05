@@ -9,9 +9,19 @@ function nameFunction() {
   };
   
   // Make the image clickable and enlarge when clicked
-function picFunction() {
-    this.style.width = this.style.width === "200px" ? "400px" : "200px"; // Toggles between two sizes
-  };
+
+  const image = document.getElementById("clickableImage");
+
+  // Toggle the image size when clicked
+  image.addEventListener("click", function() {
+    // Check if the image is in its enlarged state
+    if (this.style.width === "300px" || this.style.width === "") {
+      this.style.width = "600px"; // Enlarge the image
+    } else {
+      this.style.width = "300px"; // Revert back to original size
+    }
+  });
+
   
   // Highlight function for nav items (onmouseover)
   function highlight(element) {
