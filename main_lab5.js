@@ -9,8 +9,8 @@ function nameFunction() {
   };
   
 // Make the image clickable and enlarge when clicked
-function picFunction() {
-    const image = document.getElementById("profileImage");
+function toggleImageSize() {
+    const image = document.getElementById("clickableImage");
 
     // Check if the image is in its enlarged state
     if (image.style.width === "300px" || image.style.width === "") {
