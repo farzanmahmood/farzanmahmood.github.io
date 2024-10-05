@@ -8,8 +8,19 @@
 </head>
 <body>
 
-
   <h1>Home Page</h1>  
+
+  <!-- Button to get user's name -->
+  <div>
+    <button onclick="nameFunction()" id="nameBtn">Enter Your Name</button>
+    <p id="output"></p> <!-- Where the output will display -->
+  </div>
+  
+  <!-- Clickable Image -->
+  <div>
+    <img onclick="picFunction()" id="profileImage" src="pic.jpg" alt="My Image" width="200">
+  </div>
+
   <!-- Navigation Menu -->
 
   <div class="dropdown">
@@ -39,11 +50,7 @@
     </ul>
   </nav>
 
-  <!-- Button to get user's name -->
-  <div>
-    <button onclick="nameFunction()" id="nameBtn">Enter Your Name</button>
-    <p id="output"></p> <!-- Where the output will display -->
-  </div>
+
 
   <!-- Clickable Image -->
   <div>
