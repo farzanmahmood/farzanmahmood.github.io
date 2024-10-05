@@ -8,11 +8,10 @@ function nameFunction() {
     }
   };
   
-  // Make the image clickable and enlarge when clicked
-function picFunction() {
+// Make the image clickable and enlarge when clicked
+document.getElementById("profileImage").onclick = function picFunction() {
     this.style.width = this.style.width === "200px" ? "400px" : "200px"; // Toggles between two sizes
-  };
-
+    };
   
   // Highlight function for nav items (onmouseover)
   function highlight(element) {
