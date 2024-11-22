@@ -18,13 +18,10 @@
   }
   
   body {
-    padding-top: 7em;
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
     color: #555;
     background-color: #fcfcfc;
-    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    z-index: 3;
   }
   
   h1,
