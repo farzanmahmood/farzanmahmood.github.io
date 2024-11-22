@@ -20,4 +20,3 @@ const displayList = () => {
 btnHamburger.addEventListener('click', displayList)
 
 
-

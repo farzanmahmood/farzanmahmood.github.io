@@ -36,18 +36,12 @@
           <li class="nav__list-item">
             <a class="link link--nav" href="#contact">Contact</a>
           </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="Lab8.html">Lab 8</a>
-          </li>
         </ul>
 
-        <button type="button" class="btn btn--icon">
+        <button type="button" class="btn btn--icon" id="toggle theme">
         </button>
 
-        <button
-          type="button"
-          class="btn btn--icon nav__hamburger"
-        >
+        <button type="button" class="btn btn--icon nav__hamburger">
         </button>
       </nav>
     </header>
@@ -90,20 +84,127 @@
         </div>
 
         <img src="picture.jpg" alt="Circular Image" class="circular-image">
-        
+
       </div>
 
-      <!-- Experience (still need to complete) -->
+
+      <!-- Experience -->
       <section id="experience" class="section experience">
         <h2 class="section__title">Experience</h2>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-info">
+              <img src="bmo.png" alt="BMO Logo" class="company-logo">
+              <span class="company-name">BMO Financial Group</span>
+            </div>
+            <span class="position-title">Financial Analyst Intern</span>
+          </div>
+          <hr class="divider">
+          <div class="card-body">
+            <ul class="experience-description">
+              <li>Prepared monthly, weekly, and ad-hoc reports in Excel and Power BI, 
+                providing detailed variance analysis to support executive decision-making 
+                for F24 and F25 financials</li>
+              <li>Conducted comprehensive data analysis on combined dataset from multiple 
+                sources, extracting relevant business insights to propose CIO with solutions 
+                for $6.5M budget deficit</li>
+              <li>Collaborated with Project Managers to track monthly budgets, forecasts, 
+                and resource utilization of Funding Items, ensuring accuracy and alignment 
+                with corporate financial goals</li>
+              <li>Automated components of several reporting packages using Excel knowledge, 
+                saving future issuers 15 hours of manual work every period</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="work-details">Jan 2024 - Aug 2024 | Toronto, ON</span>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-info">
+              <img src="bmo.png" alt="BMO Logo" class="company-logo">
+              <span class="company-name">BMO Financial Group</span>
+            </div>
+            <span class="position-title">Project Coordinator Intern</span>
+          </div>
+          <hr class="divider">
+          <div class="card-body">
+            <ul class="experience-description">
+              <li>Obtained customer insights on 10 newly launched projects to present successes, 
+                shortcomings, and potential improvements to Director of Sales</li>
+              <li>Refined call volume data using AI speech detection model to conduct cost-benefit analysis, 
+                reducing monthly expenditure by a projected $100,000+ across multiple processes</li>
+              <li>Analyzed routine bank-related phone inquiries to determine methods of automation and 
+                increased efficiency using the IVR (automated phone system)</li>
+              <li>Summarized findings in pivot tables and graphs, sharing insights with team members during 
+                scrum meetings and detailing improvements in efficiency for researched process</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="work-details">May 2023 - Aug 2023 | Toronto, ON</span>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-info">
+              <img src="foresters.jpg" alt="Foresters Financial Logo" class="company-logo">
+              <span class="company-name">Foresters Financial</span>
+            </div>
+            <span class="position-title">Contracts Specialist</span>
+          </div>
+          <hr class="divider">
+          <div class="card-body">
+            <ul class="experience-description">
+              <li>Licensed, contracted, and appointed insurance producers in a prompt manner, 
+                strictly following established guidelines and adapting to dynamic regional policies</li>
+              <li>Reviewed and verified producer AML certifications, VectorOne results, and adjudicated 
+                background checks within approval standards while documenting all records and processes</li>
+              <li>Optimized application review process to increase independent work efficiency, exceeding 
+                daily completions of deliverables by 40% of senior management expectations</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="work-details">Feb 2022 - Dec 2022 | Toronto, ON</span>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="company-info">
+              <img src="acces.jpg" alt="ACCES Employment Logo" class="company-logo">
+              <span class="company-name">ACCES Employment</span>
+            </div>
+            <span class="position-title">Junior Consultant Intern</span>
+          </div>
+          <hr class="divider">
+          <div class="card-body">
+            <ul class="experience-description">
+              <li>Increased client participation by 35% over previous cohort by creating dashboards 
+                in Tableau to showcase rise in employment opportunities for graduates of our programs</li>
+              <li>Analyzed client profiles to match them with best-suited employment program and consultant 
+                while ensuring all inquiries were handled at the highest quality service levels</li>
+              <li>Multitasked by completing scheduling, order supply, and data entry tasks while simultaneously 
+                attending to clients at the reception to shorten appointment wait times </li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <span class="work-details">Jan 2024 - Aug 2024 | Toronto, ON</span>
+          </div>
+        </div>
+      </section>
+
 
       <!-- Projects -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
+        <div class="projects__grid">
           <div class="project">
             <h3 style="margin-bottom: 1em;"> Project 1</h3>
-            <img src="analytics.jpg">
+            <img src="analytics.jpg" alt="Descriptive Alt Text" class="thumbnail-image">
             <p class="project__description">
               Sample project description Sample project description Sample project description
               Sample project description Sample project description Sample project description 
@@ -127,7 +228,7 @@
 
           <div class="project">
             <h3 style="margin-bottom: 1em;"> Project 2</h3>
-            <img src="analytics.jpg">
+            <img src="analytics.jpg" alt="Descriptive Alt Text" class="thumbnail-image">
             <p class="project__description">
               Sample project description Sample project description Sample project description
               Sample project description Sample project description Sample project description 
@@ -151,7 +252,7 @@
 
           <div class="project">
             <h3 style="margin-bottom: 1em;"> Project 3</h3>
-            <img src="analytics.jpg">
+            <img src="analytics.jpg" alt="Descriptive Alt Text" class="thumbnail-image">
             <p class="project__description">
               Sample project description Sample project description Sample project description
               Sample project description Sample project description Sample project description 
@@ -172,6 +273,7 @@
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
           </div>
+        </div>
       </section>
 
       <!-- Skills -->
@@ -192,9 +294,33 @@
         </ul>
       </section>
 
-      <!-- Contact still need to finish-->
+      <!-- Contact -->
       <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
+        <h2 class="section__title">Contact Me</h2>
+
+        <div class="contact-card">
+          <form id="contactForm" onsubmit="return validateForm()">
+            <input class="contact-form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input class="contact-form-input" type="email" name="email" id="email" placeholder="Enter your email" required>
+            <input class="contact-form-input" type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+            <input class="contact-form-input" type="text" name="subject" id="subject" placeholder="Subject" required>
+            <textarea class="contact-form-input" name="message" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            <div class="form-field">
+                <label>Preferred Contact Method:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="contact-method" value="Email" checked> Email</label>
+                    <label><input type="radio" name="contact-method" value="Phone"> Phone</label>
+                </div>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset" onclick="clearFormData()">Clear All</button>
+            </div>
+      
+            <p id="error-message" style="color: red; display: none;">Please fill out all required fields.</p>
+          </form>
+        </div>
 
       </section>
     </main>
@@ -204,5 +330,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

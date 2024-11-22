@@ -18,11 +18,13 @@
   }
   
   body {
+    padding-top: 7em;
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
     color: #555;
     background-color: #fcfcfc;
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 3;
   }
   
   h1,
@@ -61,7 +63,7 @@
     cursor: pointer;
   }
 
-  
+
   /* buttons and links */
   
   .link {
@@ -170,14 +172,6 @@
     align-items: center;
   }
   
-  .header {
-    height: 8em;
-    max-width: 1100px;
-    width: 95%;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-  
   main {
     max-width: 1100px;
     width: 95%;
@@ -186,12 +180,29 @@
   
   .section {
     margin-top: 5em;
+    padding-top: 5em;
   }
   
   .section__title {
     text-align: center;
     margin-bottom: 1em;
     text-transform: uppercase;
+  }
+
+  /* Nav */
+
+  .header {
+  position: fixed;
+  padding-top: 2em;
+  top: 0; 
+  left: 0;
+  right: 0; 
+  height: 5em;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  z-index: 1000;
   }
   
   .nav__list {
@@ -208,6 +219,8 @@
     width: 1em;
   }
   
+  /* Homepage/Intro */
+
   .intro {
     flex-direction: column;
     margin-top: 1em;
@@ -247,6 +260,83 @@
     margin-top: 2.4em;
   }
   
+  /* Experience */
+
+  .experience-card {
+    width: 1100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .position-title {
+    font-weight: 550;
+    font-size: 18px;
+    color: #555;
+    text-align: right;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0 12px;
+  }
+  
+  .card-body {
+    padding: 12px;
+  }
+  
+  .experience-description {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .card-footer {
+    padding: 8px 12px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+  }
+
+  /* Projects */
+
+  .projects__grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-gap: 2em;
+  }
+
   .project {
     padding: 1em;
     margin: 1em;
@@ -254,11 +344,21 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: transform 0.2s linear;
   }
-  
+
+  .project:hover {
+    transform: translateY(-7px);
+  }
+
   .project__description {
     margin-top: 1em;
   }
-  
+ 
+  .thumbnail-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
   .project__skill {
     display: flex;
     flex-wrap: wrap;
@@ -277,6 +377,8 @@
     margin-left: 0.5em;
   }
   
+  /* Skills */
+
   .skills__list {
     max-width: 450px;
     width: 95%;
@@ -290,10 +392,91 @@
     margin: 0.5em;
   }
   
+  /* Contact Form */
+
   .contact {
     flex-direction: column;
   }
   
+  .contact-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .contact-form-input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .radio-group input {
+    margin-right: 5px;
+  }
+  
+  .form-field label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button[type="reset"] {
+    background-color: #e74c3c;
+  }
+  
+  button[type="reset"]:hover {
+    background-color: #c0392b;
+  }
+  
+  #error-message {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: red;
+  }
+
+  /* Footer */
   .footer {
     padding: 3em 0;
     margin-top: 4em;
