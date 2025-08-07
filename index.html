@@ -1,351 +1,457 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Farzan Mahmood, an aspiring data analyst with skills in data analysis, machine learning, and data visualization. Explore my projects, analyses, and insights using Python, R, SQL, and more.">
-    <meta name="keywords" content="data analyst portfolio, aspiring data analyst, data analysis, data visualization, machine learning, Python, R, SQL, data science projects, analytics, big data, statistical analysis, data insights, resume, portfolio">
-    <meta name="author" content="Farzan Mahmood">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <title>Farzan Mahmood Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Farzan Mahmood, an aspiring data analyst with skills in data analysis, machine learning, and data visualization. Explore my projects, analyses, and insights using Python, R, SQL, and more."
+    />
+    <meta
+      name="keywords"
+      content="data analyst portfolio, aspiring data analyst, data analysis, data visualization, machine learning, Python, R, SQL, data science projects, analytics, big data, statistical analysis, data insights, resume, portfolio"
+    />
+    <meta name="author" content="Farzan Mahmood" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Farzan Mahmood | Data Analyst Portfolio</title>
   </head>
-  
+
   <body>
-    <header class="header center">
-      <h2>
-        <a href="https://farzanmahmood.github.io" class="link">FM.</a>
-      </h2>
+    <!-- Loading Screen Removed -->
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#intro">Home</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#experience">Experience</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
+    <!-- Particle Background -->
+    <div id="particles"></div>
 
-      </nav>
+    <!-- Cursor Trail -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo" data-aos="fade-right">
+          <a href="#" class="logo-link">
+            <span class="logo-text">FM</span>
+          </a>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+              <a href="#home" class="nav-link">
+                <span class="nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+              <a href="#about" class="nav-link">
+                <span class="nav-text">About</span>
+              </a>
+            </li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+              <a href="#experience" class="nav-link">
+                <span class="nav-text">Experience</span>
+              </a>
+            </li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
+              <a href="#projects" class="nav-link">
+                <span class="nav-text">Projects</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="theme-toggle" data-aos="fade-left">
+          <i class="fas fa-sun"></i>
+        </div>
+
+        <div class="hamburger" id="hamburger" data-aos="fade-left" data-aos-delay="100">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
     <main>
-      <!-- Intro --> 
-      <section id="intro" class="section intro">
-        <div class="intro center">
-          <h1>Hi, I am <span class="intro__name">Farzan Mahmood.</span></h1>
-          <h2 class="intro__role">An Aspiring Data Analyst.</h2>
-          <p class="intro__desc">
-            Welcome to my portfolio! I’m a 4th Year student studying Business Technology Management at 
-            Toronto Metropolitan University. I have a passion for uncovering insights hidden in complex 
-            data and transforming them into actionable strategies. With a strong foundation in analytical 
-            tools like Python, SQL, and BI platforms, I thrive on solving challenges through data-driven 
-            decision-making. Known for my curiosity, attention to detail, and a collaborative mindset, 
-            I approach every project with enthusiasm and a commitment to delivering impactful results. 
-            Explore my portfolio to learn more about my journey, the projects I’ve undertaken, 
-            and how I aim to contribute as a data analyst. Feel free to connect through email, LinkedIn, or the contact form available! 
-          </p>
-
-          <div class="intro__contact center">
-            <a href="Resume.pdf" target="_blank" aria-label="Visit link to Resume (opens in a new tab)">
-              <span class="btn btn--outline">Resume</span>
-            </a>
-
-            <a
-              href="https://github.com/farzanmahmood"
-              target="_blank"
-              aria-label="github opens in new tab"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-
-            <a
-              href="https://linkedin.com/in/farzanmahmood"
-              target="_blank"
-              aria-label="linkedin opens in new tab"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-linkedin"></i>
-            </a>
-
-            <a 
-              href="mailto:farzan.mahmood@torontomu.ca"
-              aria-label="email opens in email application"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa fa-envelope"></i>
-            </a>
-          </div>
-
-          <img src="picture.jpg" alt="Circular Image" class="circular-image">
-
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="section experience">
-        <h2 class="section__title">Experience</h2>
-
-        <div class="experience-card">
-          <div class="card-header">
-            <div class="company-info">
-              <img src="bmo.png" alt="BMO Logo" class="company-logo">
-              <span class="company-name">BMO Financial Group</span>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-greeting" data-aos="fade-up" data-aos-delay="200">
+              <span class="greeting-text">Hello, I'm</span>
             </div>
-            <span class="position-title">Financial Analyst Intern</span>
-          </div>
-          <hr class="divider">
-          <div class="card-body">
-            <ul class="experience-description">
-              <li>Prepared monthly, weekly, and ad-hoc reports in Excel and Power BI, 
-                providing detailed variance analysis to support executive decision-making 
-                for F24 and F25 financials</li>
-              <li>Conducted comprehensive data analysis on combined dataset from multiple 
-                sources, extracting relevant business insights to propose CIO with solutions 
-                for $6.5M budget deficit</li>
-              <li>Collaborated with Project Managers to track monthly budgets, forecasts, 
-                and resource utilization of Funding Items, ensuring accuracy and alignment 
-                with corporate financial goals</li>
-              <li>Automated components of several reporting packages using Excel knowledge, 
-                saving future issuers 15 hours of manual work every period</li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <span class="work-details">Jan 2024 - Aug 2024 | Toronto, ON</span>
-          </div>
-        </div>
 
-        <div class="experience-card">
-          <div class="card-header">
-            <div class="company-info">
-              <img src="bmo.png" alt="BMO Logo" class="company-logo">
-              <span class="company-name">BMO Financial Group</span>
-            </div>
-            <span class="position-title">Project Coordinator Intern</span>
-          </div>
-          <hr class="divider">
-          <div class="card-body">
-            <ul class="experience-description">
-              <li>Obtained customer insights on 10 newly launched projects to present successes, 
-                shortcomings, and potential improvements to Director of Sales</li>
-              <li>Refined call volume data using AI speech detection model to conduct cost-benefit analysis, 
-                reducing monthly expenditure by a projected $100,000+ across multiple processes</li>
-              <li>Analyzed routine bank-related phone inquiries to determine methods of automation and 
-                increased efficiency using the IVR (automated phone system)</li>
-              <li>Summarized findings in pivot tables and graphs, sharing insights with team members during 
-                scrum meetings and detailing improvements in efficiency for researched process</li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <span class="work-details">May 2023 - Aug 2023 | Toronto, ON</span>
-          </div>
-        </div>
+            <h1 class="hero-name" data-aos="fade-up" data-aos-delay="400">
+              <span class="name-text">Farzan Mahmood</span>
+            </h1>
 
-        <div class="experience-card">
-          <div class="card-header">
-            <div class="company-info">
-              <img src="foresters.jpg" alt="Foresters Financial Logo" class="company-logo">
-              <span class="company-name">Foresters Financial</span>
-            </div>
-            <span class="position-title">Contracts Specialist</span>
-          </div>
-          <hr class="divider">
-          <div class="card-body">
-            <ul class="experience-description">
-              <li>Licensed, contracted, and appointed insurance producers in a prompt manner, 
-                strictly following established guidelines and adapting to dynamic regional policies</li>
-              <li>Reviewed and verified producer AML certifications, VectorOne results, and adjudicated 
-                background checks within approval standards while documenting all records and processes</li>
-              <li>Optimized application review process to increase independent work efficiency, exceeding 
-                daily completions of deliverables by 40% of senior management expectations</li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <span class="work-details">Feb 2022 - Dec 2022 | Toronto, ON</span>
-          </div>
-        </div>
+            <h2 class="hero-title" data-aos="fade-up" data-aos-delay="600">
+              <span class="title-typing">Data Analyst & Problem Solver</span>
+            </h2>
 
-        <div class="experience-card">
-          <div class="card-header">
-            <div class="company-info">
-              <img src="acces.jpg" alt="ACCES Employment Logo" class="company-logo">
-              <span class="company-name">ACCES Employment</span>
-            </div>
-            <span class="position-title">Junior Consultant Intern</span>
-          </div>
-          <hr class="divider">
-          <div class="card-body">
-            <ul class="experience-description">
-              <li>Increased client participation by 35% over previous cohort by creating dashboards 
-                in Tableau to showcase rise in employment opportunities for graduates of our programs</li>
-              <li>Analyzed client profiles to match them with best-suited employment program and consultant 
-                while ensuring all inquiries were handled at the highest quality service levels</li>
-              <li>Multitasked by completing scheduling, order supply, and data entry tasks while simultaneously 
-                attending to clients at the reception to shorten appointment wait times </li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <span class="work-details">Jan 2024 - Aug 2024 | Toronto, ON</span>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          
-          <div class="project">
-            <h3 style="margin-bottom: 1em;"> Will the Customer Subscribe? A Python Predictive Model</h3>
-            <img src="analytics.jpg" alt="Project 1 Image" class="thumbnail-image">
-            <p class="project__description">
-              Predicts if a customer will subscribe to an insurance offer by leveraging 
-              Python's data analysis and machine learning libraries. Using seaborn and matplotlib, I visualized
-              the data for exploratory analysis and determined which features would be used in my model. 
-              I then built and compared predictive models using linear regression and decision trees from scikit-learn, achieving 89% accuracy.
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="800">
+              I transform complex data into meaningful insights and actionable strategies. With expertise in Python, SQL, and modern BI
+              platforms, I help organizations make data-driven decisions that drive growth and innovation.
             </p>
-            <ul class="project__skill">
-              <li class="project__skill-item">Python</li>
-              <li class="project__skill-item">Pandas</li>
-              <li class="project__skill-item">Matplotlib</li>
-              <li class="project__skill-item">Seaborn</li>
-              <li class="project__skill-item">SciKit Learn</li>
-            </ul>
 
-            <a
-              href="https://github.com/farzanmahmood/Python-Projects/blob/main/Subscription%20Predictive%20Model%20(Data%20Science).ipynb"
-              target="_blank"
-              aria-label="source code opens in new tab"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="1000">
+              <a href="#projects" class="cta-btn primary">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="Resume.pdf" target="_blank" class="cta-btn secondary">
+                <span>Download Resume</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+
+            <div class="hero-social" data-aos="fade-up" data-aos-delay="1200">
+              <a href="https://github.com/farzanmahmood" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span class="social-tooltip">GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/farzanmahmood" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span class="social-tooltip">LinkedIn</span>
+              </a>
+              <a href="mailto:farzan.mahmood@torontomu.ca" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span class="social-tooltip">Email</span>
+              </a>
+            </div>
           </div>
 
-          <div class="project">
-            <h3 style="margin-bottom: 1em;"> Does Economic Condition Impact Movie Revenue?</h3>
-            <img src="movie.jpg" alt="Project 2 Image" class="thumbnail-image">
-            <p class="project__description">
-              A dashboard to visualize different ways of determining whether a recessionary or expansionary period 
-              impacted the box office performance of a movie. There is an overall analysis in the first part of the dashboard and
-              a more drill-down analysis of particular movies in the second part. Please check out the YouTube video linked below
-              for a more detailed walkthrough of the dashboard and problem analysis.
-            </p>
-            <ul class="project__skill">
-              <li class="project__skill-item">Tableau</li>
-              <li class="project__skill-item">LOD Expressions</li>
-              <li class="project__skill-item">Data Visualization</li>
-              <li class="project__skill-item">Interactive</li>
-              <li class="project__skill-item">Dynamic</li>
-            </ul>
-
-            <a
-              href="https://youtu.be/p_DzYIbJ-Uk"
-              target="_blank"
-              aria-label="youtube video opens in new tab"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-youtube"></i>
-            </a>
+          <div class="hero-image" data-aos="fade-left" data-aos-delay="600">
+            <div class="image-container">
+              <div class="image-glow"></div>
+              <img src="picture.jpg" alt="Farzan Mahmood" class="profile-image" />
+              <div class="image-frame"></div>
+            </div>
           </div>
+        </div>
 
-          <div class="project">
-            <h3 style="margin-bottom: 1em;"> Creating and Querying a Database from Scratch in SQL</h3>
-            <img src="sql project.png" alt="Project 3 Image" class="thumbnail-image">
-            <p class="project__description">
-              Created a relational database from scratch about zoo animals and their respective zoos and locations.
-              Ensured data integrity with primary keys and foreign keys along with table relationships. Performed advanced
-              SQL queries using subqueries, inner joins, cases, and aggregate functions to explore the data. There are also queries
-              for manipulating the data along with queries to clean the data.
-            </p>
-            <ul class="project__skill">
-              <li class="project__skill-item">SQL</li>
-              <li class="project__skill-item">Subqueries</li>
-              <li class="project__skill-item">JOINS</li>
-              <li class="project__skill-item">Cases</li>
-              <li class="project__skill-item">Data Structures</li>
-            </ul>
-
-            <a
-              href="https://github.com/farzanmahmood/SQL/blob/main/ITM%20500%20Project%202.sql"
-              target="_blank"
-              aria-label="source code opens in new tab"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1400">
+          <div class="scroll-text">Scroll to explore</div>
+          <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">Excel</li>
-          <li class="skills__list-item btn btn--plain">Tableau</li>
-          <li class="skills__list-item btn btn--plain">Power BI</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">Alteryx</li>
-          <li class="skills__list-item btn btn--plain">MS Office</li>
-          <li class="skills__list-item btn btn--plain">R</li>
-        </ul>
-      </section>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-number">02.</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+          </div>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact Me</h2>
+          <div class="about-content">
+            <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+              <p class="about-paragraph">
+                Welcome to my portfolio! I'm a recent graduate with a Bachelor of Commerce in Business Technology Management from Toronto Metropolitan University
+                with a passion for uncovering insights hidden in complex data.
+              </p>
 
-        <div class="contact-card">
-          <form id="contactForm" onsubmit="return validateForm()">
-            <input class="contact-form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
-            <input class="contact-form-input" type="email" name="email" id="email" placeholder="Enter your email" required>
-            <input class="contact-form-input" type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
-            <input class="contact-form-input" type="text" name="subject" id="subject" placeholder="Subject" required>
-            <textarea class="contact-form-input" name="message" id="message" rows="4" placeholder="Enter your message" required></textarea>
-            <div class="form-field">
-                <label>Preferred Contact Method:</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="contact-method" value="Email" checked> Email</label>
-                    <label><input type="radio" name="contact-method" value="Phone"> Phone</label>
+              <p class="about-paragraph">
+                I thrive on transforming raw data into actionable strategies that drive business growth. With a strong foundation in
+                analytical tools and a collaborative mindset, I approach every project with curiosity, attention to detail, and enthusiasm.
+              </p>
+
+              <p class="about-paragraph">
+                Known for my ability to communicate complex findings in simple terms, I bridge the gap between technical analysis and
+                business strategy.
+              </p>
+
+              <div class="about-skills">
+                <h3>Technologies I work with:</h3>
+                <div class="skills-grid">
+                  <div class="skill-item">Python</div>
+                  <div class="skill-item">SQL</div>
+                  <div class="skill-item">Excel</div>
+                  <div class="skill-item">Tableau</div>
+                  <div class="skill-item">Power BI</div>
+                  <div class="skill-item">R</div>
+                  <div class="skill-item">DAX</div>
+                  <div class="skill-item">VBA</div>
+                  <div class="skill-item">Power Query</div>
+                  <div class="skill-item">Azure</div>
+                  <div class="skill-item">SQL Server</div>
+                  <div class="skill-item">JavaScript</div>
+                  <div class="skill-item">HTML/CSS</div>
+                  <div class="skill-item">IBM Cognos</div>
                 </div>
+              </div>
             </div>
-            
-            <div class="form-buttons">
-                <button type="submit">Submit</button>
-                <button type="reset" onclick="clearFormData()">Clear All</button>
-            </div>
-      
-            <p id="error-message" style="color: red; display: none;">Please fill out all required fields.</p>
-          </form>
-        </div>
 
+            <div class="about-stats" data-aos="fade-left" data-aos-delay="400">
+              <div class="stat-card">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-count="3">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-count="100">0</div>
+                <div class="stat-label">Reports Generated</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-count="6.5">0</div>
+                <div class="stat-label">Million $ Analyzed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience-section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="experience-timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-content">
+                <div class="company-header">
+                  <img src="bmo.png" alt="BMO" class="company-logo" />
+                  <div class="company-info">
+                    <h3 class="position">Technical Business Analyst Co-op</h3>
+                    <h4 class="company">BMO Financial Group</h4>
+                    <span class="duration">May 2025 - Aug 2025 | Toronto, ON</span>
+                  </div>
+                </div>
+                <ul class="achievements">
+                  <li>
+                    Collaborated with stakeholders across business and technology teams to refine analytical requirements for a $2M data
+                    migration project using Amazon RedShift, transforming raw data into actionable insights
+                  </li>
+                  <li>
+                    Developed and presented an end-to-end Power BI demo covering semantic models, DAX calculations, and table relationships,
+                    equipping 10+ stakeholders to more precisely define reporting requirements
+                  </li>
+                  <li>
+                    Built repeatable reporting solutions and automated Excel data pipelines for integration with IBM OpenPages, reducing manual
+                    effort and improving regulatory reporting timelines by 40%
+                  </li>
+                  <li>
+                    Authored comprehensive functional requirements and process flow diagrams for an AI-driven regulatory change detection
+                    tool, collaborating with cross-functional teams to align deliverables with enterprise risk objectives
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-content">
+                <div class="company-header">
+                  <img src="bmo.png" alt="BMO" class="company-logo" />
+                  <div class="company-info">
+                    <h3 class="position">Financial Analyst Co-op</h3>
+                    <h4 class="company">BMO Financial Group</h4>
+                    <span class="duration">Jan 2024 - Aug 2024 | Toronto, ON</span>
+                  </div>
+                </div>
+                <ul class="achievements">
+                  <li>
+                    Produced executive-level reports with detailed variance analysis to support quarterly forecasting and scenario modeling
+                  </li>
+                  <li>
+                    Worked with Clarity and Excel to manage $100M+ portfolios, analyze funding allocations, and ensure alignment with
+                    business targets
+                  </li>
+                  <li>
+                    Automated complex reporting using Power Query and VBA to create scalable analytics tools, saving 15+ hours per cycle for
+                    non-technical users
+                  </li>
+                  <li>
+                    Leveraged systems thinking to evaluate business needs and translate them into scalable reporting solutions with improved data
+                    accessibility
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="timeline-content">
+                <div class="company-header">
+                  <img src="bmo.png" alt="BMO" class="company-logo" />
+                  <div class="company-info">
+                    <h3 class="position">Product Insights Analyst Co-op</h3>
+                    <h4 class="company">BMO Financial Group</h4>
+                    <span class="duration">May 2023 - Aug 2023 | Toronto, ON</span>
+                  </div>
+                </div>
+                <ul class="achievements">
+                  <li>
+                    Created interactive dashboards and performance reports to evaluate marketing campaign success, uncovering data-driven
+                    opportunities for enhancement
+                  </li>
+                  <li>
+                    Applied data mining and pattern recognition on voice data to support call center optimization, reducing operating costs by
+                    over $100K monthly
+                  </li>
+                  <li>
+                    Developed user-centric recommendations by applying data storytelling principles to visualize trends, identify patterns, and
+                    present business cases, facilitating data-driven decision making across Agile product teams
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="timeline-content">
+                <div class="company-header">
+                  <img src="foresters.jpg" alt="Foresters" class="company-logo" />
+                  <div class="company-info">
+                    <h3 class="position">Licensing & Contracts Specialist</h3>
+                    <h4 class="company">Foresters Financial</h4>
+                    <span class="duration">Feb 2022 - Dec 2022 | Toronto, ON</span>
+                  </div>
+                </div>
+                <ul class="achievements">
+                  <li>
+                    Maintained 100% compliance in licensing and onboarding by managing data entry, credential validation, and internal
+                    reporting dashboards
+                  </li>
+                  <li>
+                    Documented business processes and collaborated with leadership to streamline appointment workflows, increasing team
+                    efficiency by 40%
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="timeline-content">
+                <div class="company-header">
+                  <img src="acces.jpg" alt="ACCES" class="company-logo" />
+                  <div class="company-info">
+                    <h3 class="position">Junior Consultant Intern</h3>
+                    <h4 class="company">ACCES Employment</h4>
+                    <span class="duration">Jan 2021 - Aug 2021 | Toronto, ON</span>
+                  </div>
+                </div>
+                <ul class="achievements">
+                  <li>
+                    Increased client participation by 35% over previous cohort by creating dashboards in Tableau to showcase rise in
+                    employment opportunities for graduates of our programs
+                  </li>
+                  <li>
+                    Analyzed client profiles to match them with best-suited employment program and consultant while ensuring all inquiries
+                    were handled at the highest quality service levels
+                  </li>
+                  <li>
+                    Multitasked by completing scheduling, order supply, and data entry tasks while simultaneously attending to clients at
+                    the reception to shorten appointment wait times
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-number">04.</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-image">
+                <img src="analytics.jpg" alt="CourtVision NBA Analytics" />
+                <div class="project-overlay">
+                  <a href="#" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">CourtVision: BI Analytics on NBA Team Performance</h3>
+                <p class="project-description">
+                  Built an automated ETL process using SQLAlchemy and Pandas to clean and load NBA team, statistics, and game data from
+                  NBA-API into a relational SQL Server database. Designed an interactive Power BI report with advanced filters and visual storytelling techniques.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">SQL Server</span>
+                  <span class="tech-tag">Power BI</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">SQLAlchemy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="project-image">
+                <img src="movie.jpg" alt="Dealership Management System" />
+                <div class="project-overlay">
+                  <a href="#" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Dealership Management System (DMS) Prototype</h3>
+                <p class="project-description">
+                  Led the end-to-end development of a Dealership Management System prototype for a small used car dealership, conducting
+                  stakeholder interviews, documenting business and data requirements, and designing a fully interactive web-based application.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Visio</span>
+                  <span class="tech-tag">Excel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      © Farzan Mahmood, 2025
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/farzanmahmood" target="_blank" class="footer-social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/farzanmahmood" target="_blank" class="footer-social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:farzan.mahmood@torontomu.ca" class="footer-social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="main.js"></script>
     <script src="contact.js"></script>
   </body>
