@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dealership Management System Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 20px;
+      color: #222;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      color: #111;
+    }
+    img {
+      width: 100%;
+      max-width: 750px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+    .caption {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    hr {
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dealership Management System (DMS) – End-to-End SDLC Project</h1>
+  <p><strong>Role:</strong> Project Manager · Business Analyst · Developer</p>
+
+  <p>
+    This project involved designing and prototyping a custom Dealership Management System (DMS) for a small used car dealership struggling with inefficient inventory tracking, manual document handling, and a lack of business insights. I took the project from the planning phase all the way to a working prototype, covering the full Software Development Life Cycle (SDLC).
+  </p>
+
+  <hr />
+
+  <h2>📌 1. Project Planning</h2>
+  <p>
+    The first step was creating a project charter to define scope, stakeholders, goals, and timeline. The dealership’s main pain points were identified through interviews and process observation. A high-level project schedule was created to manage phases from discovery to prototyping.
+  </p>
+  <img src="Group 5 Files/Section 1/gantt chart.png" alt="Project Schedule" />
+  <p class="caption">[Insert: Project Schedule Diagram]</p>
+
+  <h2>🔍 2. Requirements Gathering & Current State Analysis</h2>
+  <p>
+    I documented the dealership’s existing workflows using BPMN diagrams to capture the “as-is” process. This revealed inefficiencies in manual data entry, document filing, and a complete absence of reporting or analytics.
+  </p>
+  <img src="Group 5 Files/Section 4/BPMN As-is/Main Diagram.svg" alt="As-Is BPMN Diagram" />
+
+  <h2>🛠️ 3. Process Redesign & Future-State Modeling</h2>
+  <p>
+    Based on identified gaps, I proposed a redesigned “to-be” workflow that introduced digital recordkeeping, automated calculations, and streamlined document management. This became the foundation for the system’s core features.
+  </p>
+  <img src="Group 5 Files/Section 4/BPMN To-be/ToBE_BPMN-Main.svg" alt="To-Be BPMN Diagram" />
+
+  <h2>🧱 4. System Design & Database Modeling</h2>
+  <p>
+    I designed a relational database schema to store vehicles, financials, documents, and sales history. The schema supported normalized relationships and enabled robust filtering for reports.
+  </p>
+  <img src="Group 5 Files/Section 5/Database schema.png" alt="Database Schema" />
+
+
+  <h2>🧪 5. Prototype Development</h2>
+  <p>
+    I developed a functional web-based prototype using HTML, CSS, and JavaScript. The system included features such as:
+  </p>
+  <ul>
+    <li>Vehicle lookup by VIN with autofill</li>
+    <li>Document upload linked to vehicle records</li>
+    <li>Automated expense and profit calculations</li>
+    <li>Custom reporting with filters by make, date, and status</li>
+  </ul>
+
+  <img src="Group 5 Files/Prototype/1.png" alt="Prototype Home Page" />
+
+  <img src="Group 5 Files/Prototype/2.png" alt="Vehicle Dashboard" />
+
+  <img src="Group 5 Files/Prototype/3.png" alt="Report Filter Interface" />
+
+  <img src="Group 5 Files/Prototype/4.png" alt="Sales Report Sample" />
+
+  <hr />
+
+  <h2>💡 Reflections</h2>
+  <p>
+    This project was a valuable hands-on experience in full-cycle software development, from problem definition to prototype. It demonstrated my ability to combine business analysis with system design and frontend development — all while keeping the end-user experience in focus.
+  </p>
+
+  <p>
+    In future iterations, I would expand the prototype with backend functionality, authentication, and persistent storage using a framework like Flask or Node.js. I would also incorporate user testing and feedback loops to further refine the system.
+  </p>
+
+</body>
+</html>
